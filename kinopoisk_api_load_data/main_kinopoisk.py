@@ -83,7 +83,7 @@ def raw_data_load(df: pd.DataFrame):
     file_name = f'kp_{file_date}.csv'
     df.to_csv(f'raw_data/{file_name}')
 
-df = main_load_data('5.1-5.2') # указан короткий диапазон значений
+df = main_load_data('5.1-5.2') # указан короткий диапазон значений (для тз использовать'6-8')
 raw_data_load(df)
 
 print('Самая успешная страна с точки зрения оценок -',succesful_countries(df))
